@@ -40,8 +40,8 @@ export const ServicesPage = () => {
     upcomingServices: 3
   };
 
-  const getStatusBadge = (status: string) => {
-    const badges = {
+  const getStatusBadge = (status: string): string => {
+    const badges: Record<string, string> = {
       'Completed': 'badge-success',
       'In Progress': 'badge-warning',
       'Pending': 'badge-warning',
